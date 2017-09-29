@@ -8,8 +8,8 @@ public abstract class Salarie {
     private String nom;
 
 
-    public Salarie(){
-        this.nom = getNom();
+    public Salarie(String nom){
+        this.nom = nom;
     }
 
 

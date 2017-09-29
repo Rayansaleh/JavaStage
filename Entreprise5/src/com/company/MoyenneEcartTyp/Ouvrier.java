@@ -5,8 +5,8 @@ public class Ouvrier extends Salarie{
     private int heureTravail;
     private double salaireOuvrier;
 
-    public Ouvrier(int heureTravail){
-        super();
+    public Ouvrier(String nom, int heureTravail){
+        super(nom);
         this.heureTravail = heureTravail;
         AfficherSalaire();
 

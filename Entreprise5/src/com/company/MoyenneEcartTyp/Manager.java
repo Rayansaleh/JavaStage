@@ -9,12 +9,12 @@ public class Manager extends Salarie{
 
     public List<Ouvrier> service = new ArrayList<>();
 
-    public Manager(){
-        super();
+    public Manager(String nom){
+        super(nom);
     }
 
-    public void addService(Salarie ouvrier){
-        service.add((Ouvrier) ouvrier);
+    public void addService(Ouvrier ouvrier){
+        service.add(ouvrier);
     }
 
     @Override

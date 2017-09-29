@@ -13,11 +13,11 @@ public class Main {
         Salarie Nadine = new Manager();
         Salarie Farid = new Manager();
 
-        Nadine.addService(Rayan);
-        Nadine.addService(Celine);
-        Nadine.addService(Jaafar);
-        Farid.addService(Hayssam);
-        Farid.addService(Celine);
+        ((Manager)Nadine).addService(Rayan);
+        ((Manager)Nadine).addService(Celine);
+        ((Manager)Nadine).addService(Jaafar);
+        ((Manager)Farid).addService(Hayssam);
+        ((Manager)Farid).addService(Celine);
 
         Ebiznext.addSalarie(Rayan);
         Ebiznext.addSalarie(Hayssam);

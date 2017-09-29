@@ -19,9 +19,4 @@ public class Ouvrier extends Salarie{
         return salaireOuvrier;
     }
 
-    @Override
-    public void addService(Salarie rayan) {
-
-    }
-
 }

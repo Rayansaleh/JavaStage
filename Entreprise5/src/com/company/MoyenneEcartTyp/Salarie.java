@@ -16,7 +16,7 @@ public abstract class Salarie {
     public abstract double Remuneration();
 
     public void AfficherSalaire(){
-        System.out.println(this.getNom() + " à un salaire de " + this.Remuneration() + "€");
+        System.out.println(this.nom + " à un salaire de " + this.Remuneration() + "€");
     }
 
     public String getNom() {
@@ -27,5 +27,5 @@ public abstract class Salarie {
         this.nom = nom;
     }
 
-    public abstract void addService(Salarie rayan);
+
 }

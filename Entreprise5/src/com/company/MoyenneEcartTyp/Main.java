@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
+
         Entreprise Ebiznext = new Entreprise("Ebiznext");
         Ouvrier rayan = new Ouvrier("Rayan", 20);
         Ouvrier farid = new Ouvrier("Farid", 30);
@@ -26,10 +27,9 @@ public class Main {
         Ebiznext.addSalarie(nadine);
         Ebiznext.addSalarie(farid);
 
-        nadine.AfficherSalaire();
-        hayssam.AfficherSalaire();
-
+        Ebiznext.salarieEntreprise();
         Ebiznext.ChiffreAffaire();
+        Ebiznext.TriSalarie(500);
     }
 
 }

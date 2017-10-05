@@ -2,6 +2,7 @@ package com.company.MoyenneEcartTyp;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Manager extends Salarie{
 
@@ -19,13 +20,10 @@ public class Manager extends Salarie{
 
     @Override
     public double Remuneration() {
-        double k;
-        for (int i = 0; i < service.size(); i++) {
-            k = service.get(i).Remuneration();
-            salaireManager += k;
-        }
+        salaireManager = service.stream().map(Ouvrier::Remuneration).reduce(0d, (a, b) -> a + b);
         salaireManager /= 2.5;
 
         return salaireManager;
     }
+
 }

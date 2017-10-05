@@ -3,29 +3,25 @@ package com.company.MoyenneEcartTyp;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Salarie {
+public abstract class Salarie
+{
 
     private String nom;
+    private int id_salarie;
 
-
-    public Salarie(String nom){
+    public Salarie(String nom)
+    {
         this.nom = nom;
     }
 
 
     public abstract double Remuneration();
 
-    public void AfficherSalaire(){
+    public void AfficherSalaire()
+    {
         System.out.println(this.nom + " à un salaire de " + this.Remuneration() + "€");
     }
 
-    public String getNom() {
-        return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
 
 
 }

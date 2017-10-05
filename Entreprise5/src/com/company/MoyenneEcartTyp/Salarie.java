@@ -7,7 +7,7 @@ public abstract class Salarie
 {
 
     private String nom;
-
+    private int id_salarie;
 
     public Salarie(String nom)
     {
@@ -22,15 +22,6 @@ public abstract class Salarie
         System.out.println(this.nom + " à un salaire de " + this.Remuneration() + "€");
     }
 
-    public String getNom()
-    {
-        return nom;
-    }
-
-    public void setNom(String nom)
-    {
-        this.nom = nom;
-    }
 
 
 }

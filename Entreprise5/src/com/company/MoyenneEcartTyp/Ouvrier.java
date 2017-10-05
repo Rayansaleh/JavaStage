@@ -10,7 +10,6 @@ public class Ouvrier extends Salarie
     {
         super(nom);
         this.heureTravail = heureTravail;
-        AfficherSalaire();
 
     }
 
